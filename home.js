@@ -268,3 +268,4 @@ change HTML with Javascript*/
             text = 'weekday';
     }
     console.log(text);
+    
