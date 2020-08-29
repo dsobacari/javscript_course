@@ -12,7 +12,7 @@
         //console.log(someNumber);
         
 //Manipulate DOM with Javascript
-/*Its just a fancyway of saying 
+/*Its just a fancy way of saying 
 change HTML with Javascript*/
 
        // var age = prompt('What is your age?');
@@ -160,7 +160,7 @@ change HTML with Javascript*/
     console.log(fruit.split(''));                           //split by a character
 */
 
-//Array
+/*Array
 
     let fruits = ['banana', 'apple', 'orange', 'pineapple'];
     fruits = new Array('banana', 'apple', 'orange', 'pineapple');
@@ -184,3 +184,87 @@ change HTML with Javascript*/
     console.log(fruits[4]);
     fruits[fruits.length] = 'new fruit';                    //same as push
     console.log(fruits);
+    fruits.shift();                                         //removes first element from an array
+    console.log(fruits);
+    fruits.unshift('kiwi');                                 //add first elemnt to an array
+    console.log(fruits);
+
+    let vegetables = ['asparagus', 'tomato', 'broccoli'];
+    let allGroceries = fruits.concat(vegetables);           //combine array
+    console.log(allGroceries);
+    console.log(allGroceries.slice(1,4));
+    console.log(allGroceries.reverse());
+    console.log(allGroceries.sort());
+
+
+    let someNumbers = [5, 10, 2, 25, 3, 255, 1, 2, 5, 334, 321, 2];
+    console.log(someNumbers.sort(function(a, b) {return a-b})); //sorting assending order
+    console.log(someNumbers.sort(function(a, b) {return b-a})); //sorting decending order
+
+    let emptyArray = new Array();
+    for (let num =0; num < 10; num++) {
+        emptyArray.push(num);
+
+    }
+    console.log(emptyArray);
+
+*/
+/*Objects in JavaScript
+//dictionaries in Python
+    let student ={
+        first: 'Rafeh',
+        last: 'Quazimoto',
+        age:30,
+        height:190,
+        studentInfo: function(){
+                return this.first +'\n' + this.last +'\n' + this.age;
+        }
+    };
+    //console.log(student.first);
+    //console.log(student.last);
+
+    //student.first = 'notRafeh';                     //change value
+    //console.log(student.first);
+    student.age++;
+    console.log(student.age);
+
+    console.log(student.studentInfo());
+*/
+/*Conditionals, Control flows (if else)
+    //18-35 is my target demographic
+    
+    var age = prompt('what is your age?');
+
+    if ( (age >= 18) && (age <=35) ) {
+        status = 'target demo';
+        console.log(status);
+    } else{
+        status = 'not my audience';
+        console.log(status);
+    }    
+*/
+
+// Switch statements
+    // differentiate between weekday vs. weekend
+    // day 0 --> Sunday     --> weekend
+    // day 1 --> Monday     --> weekday
+    // day 2 --> Tuesday    --> weekday
+    // day 3 --> Wednesda   --> weekday
+    // day 4 --> Thursday   --> weekday
+    // day 4 --> Friday     --> weekend
+    // day 6 --> Saturday   --> weekend
+
+    switch (2) {
+        case 0: 
+            text = 'weekend';
+            break;
+        case 5:
+            text = 'weekend';
+            break;
+        case 6:
+            text = 'weekend';
+        break;
+        default:
+            text = 'weekday';
+    }
+    console.log(text);
