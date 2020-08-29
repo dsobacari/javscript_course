@@ -15,7 +15,7 @@
 /*Its just a fancyway of saying 
 change HTML with Javascript*/
 
-       // var age = prompt('Whatis your age?');
+       // var age = prompt('What is your age?');
     
        // document.getElementById('someText').innerHTML = age;
 
