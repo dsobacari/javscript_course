@@ -244,7 +244,7 @@ change HTML with Javascript*/
     }    
 */
 
-// Switch statements
+/* Switch statements
     // differentiate between weekday vs. weekend
     // day 0 --> Sunday     --> weekend
     // day 1 --> Monday     --> weekday
@@ -268,4 +268,27 @@ change HTML with Javascript*/
             text = 'weekday';
     }
     console.log(text);
-    
+*/
+
+/*removes vowels in a string
+function disemvowel(str) {
+    return input.replace(/[aeiou]/gi, "");//g flag match i flag performs case-insensitive matching.
+  }
+*/
+/*returns an array with all of the integer's divisors. if prime return prime
+function divisors(x) {
+    arr = [];
+     for (var i=2;i<x;i++){
+      if (x % i === 0){
+       arr.push(i);
+            }
+     } if (arr.length === 0) {
+            return `${x} is prime`;
+        } else {
+            return arr;
+        }
+    }
+*/    
+/*Narcisistic number
+    return n == (''+n).split('').reduce(function(x, y) {return x + Math.pow(+y, (''+n).length)}, 0)
+*/
